@@ -1,0 +1,25 @@
+.header {
+    padding: 0 2rem;
+    background-color: #F83E35;
+}
+
+
+.header__wrapper{
+    max-width: 1000px;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header__logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.header__logo-text {
+    font-weight: 500;
+    color: white;
+}
