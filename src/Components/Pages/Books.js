@@ -10,14 +10,18 @@ function Books() {
 
     const dialogRef = useRef(null);
 
-    function toggleDialog() {
+    function ModalOpen() {
         if(!dialogRef.current){
             return
         }
+        dialogRef.current.showModal();
+    }
 
-        dialogRef.current.hasAttribute("open")
-            ? dialogRef.current.close()
-            : dialogRef.current.showModal();
+    function ModalClose() {
+        if(!dialogRef.current){
+            return
+        }
+        dialogRef.current.close();
     }
 
   return (
@@ -31,7 +35,7 @@ function Books() {
                 </div>
                 
 
-                <button className='book-section__add-book' onClick={toggleDialog}>
+                <button className='book-section__add-book' onClick={ModalOpen}>
                     <FontAwesomeIcon icon={faPlus} className='book-section__plus-icon'/>
                     Add Book
                 </button>
@@ -62,7 +66,7 @@ function Books() {
         </div>
 
         <dialog ref={dialogRef} className='book-section__dialog'>
-            <AddBooksModal onClick={toggleDialog} />   
+            <AddBooksModal onClick={ModalClose} />   
         </dialog>
     </section>
   )
