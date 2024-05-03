@@ -1,0 +1,116 @@
+.book-section {
+    padding: 5rem 2rem;
+}
+
+.book-section__wrapper {
+    max-width: 1000px;
+    margin-inline: auto;
+}
+
+.book-section__controls-wrapper {
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    position: relative;
+    
+}
+
+.book-section__controls-wrapper::after {
+    content: ' ';
+    position: absolute;
+    bottom: -1.5rem;
+    left: 0;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.089);
+    width: 100%;
+    
+}
+
+.book-section__input-field-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;   
+}
+
+.book-section__input-field {
+    padding: 0.5rem 0;
+    padding-left: 3rem;
+    padding-right: 2rem;
+    font-size: 1rem;
+    width: 350px;
+    border-radius: 5px;
+    border: 1px solid black;
+    outline: none;
+    background: white;
+    
+}
+
+.book-section__search-icon {
+    position: absolute;
+    font-size: 1.2rem;
+    left: 15px;
+    top: 50%; 
+    transform: translateY(-50%); 
+    color: var(--red-color);
+  }
+
+.book-section__plus-icon{
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+.book-section__add-book {
+    padding: 0.4rem 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    background: var(--red-color);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.book-section__add-book:hover {
+    transform: scale(1.05);
+}
+
+.book-section__table {
+    width: 100%;
+    margin-top: 2rem;
+    border-collapse: collapse;
+    
+}
+
+.book-section__column-header {
+    font-weight: 600;
+    background: var(--red-color);
+    padding: 0.5rem 1.5rem;
+    color: white;
+}
+
+.book-section__column-header:nth-child(1) {
+    border-top-left-radius: 10px;
+}
+
+.book-section__column-header:nth-child(4) {
+    border-top-right-radius: 10px;
+}
+
+.book-section__table-data {
+    padding: 1.5rem 1.5rem;
+}
+
+
+/* DIALOG */
+
+.book-section__dialog { /* Replace with your actual modal class */
+    border: none;
+    outline: none; 
+    border-radius: 10px;
+  }
+
