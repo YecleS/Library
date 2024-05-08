@@ -30,14 +30,14 @@ function Books() {
 
             <div className='book-section__controls-wrapper'>
                 <div className='book-section__input-field-wrapper'>                  
-                    <input type='text' id="book-section__input" className='book-section__input-field' placeholder='Search Books'></input>
+                    <input type='text' id="book-section__input" className='book-section__input-field' placeholder='Search Items'></input>
                     <FontAwesomeIcon icon={faMagnifyingGlass} className='book-section__search-icon'/>
                 </div>
                 
 
                 <button className='book-section__add-book' onClick={ModalOpen}>
                     <FontAwesomeIcon icon={faPlus} className='book-section__plus-icon'/>
-                    Add Book
+                    Add Item
                 </button>
             </div>
             
@@ -45,7 +45,7 @@ function Books() {
             <table className='book-section__table'>
                 <thead>
                     <tr>
-                        <td className='book-section__column-header'>Book Title</td>
+                        <td className='book-section__column-header'>Item</td>
                         <td className='book-section__column-header'>Quantity</td>
                         <td className='book-section__column-header'>Description</td>
                         <td className='book-section__column-header'>Action</td>
@@ -53,7 +53,7 @@ function Books() {
                 </thead>
                 <tbody>
                     <tr>
-                        <td className='book-section__table-data'>Book1</td>
+                        <td className='book-section__table-data'>Flask</td>
                         <td className='book-section__table-data'>13</td>
                         <td className='book-section__table-data'>Lorem ipsum dolor sit amet asddddwasd.</td>
                         <td className='book-section__table-data'>
